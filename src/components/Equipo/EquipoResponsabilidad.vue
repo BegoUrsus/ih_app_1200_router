@@ -16,7 +16,7 @@ import BackgroundLoader from "@/components/Common/BackgroundLoader.vue";
 })
 export default class EquipoResponsabilidad extends Vue {
 
-  public frame_responsabilidad = "1_2_3_equipo_gest_resp.jpg";
+  public frame_responsabilidad = "1_2_3_equipo_gest_resp.svg";
   public texto =
     `Antes del inicio de cada obra, se elabora el PLAN DE GESTIÓN MEDIOAMBIENTAL, adaptado a las características del Proyecto y ubicación de la zona de obras.
     <br/><br/>

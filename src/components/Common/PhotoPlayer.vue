@@ -85,7 +85,7 @@ export default class PhotoPlayer extends Vue {
   top: 0; 
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .65);
+  background-color: rgba(0, 0, 0, .8);
 }
 .inner {
   position: absolute;
@@ -135,7 +135,7 @@ export default class PhotoPlayer extends Vue {
 }
 .fade-enter, .slide-fade-leave-to {
   // transform: translateX(400px);
-  opacity: 0;
+  opacity: 0.25;
 }
 
 

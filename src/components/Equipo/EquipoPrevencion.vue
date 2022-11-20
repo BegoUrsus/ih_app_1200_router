@@ -16,7 +16,7 @@ import BackgroundLoader from "@/components/Common/BackgroundLoader.vue";
 })
 export default class EquipoPrevencion extends Vue {
 
-  public frame_prevencion = "1_2_2_equipo_gest_prev.jpg";
+  public frame_prevencion = "1_2_2_equipo_gest_prev.svg";
   public texto =
     `Nuestros profesionales reciben de manera continua formación en materia de Prevención de Riesgos Laborales, actualizada a los nuevos procedimientos de ejecución y aprovechando los avances en cuanto a medidas de protección colectivas e individuales que nos ofrece el mercado.
             <br/><br/>

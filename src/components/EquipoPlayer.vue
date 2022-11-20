@@ -1,6 +1,7 @@
 <template lang="pug">
     section(id="equipo-player")
-      router-view
+      Transition(name="fade" mode="out-in")
+        router-view
       MenuEquipo
 </template>
 

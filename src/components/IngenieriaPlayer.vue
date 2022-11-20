@@ -28,7 +28,7 @@ export default class IngenieriaPlayer extends Vue {
     // console.log("IngenieriaPlayer mounted " + this.$store.state.mainState + " " + this.$store.state.ingenieriaState)
   }
 
-  frameFondo = "2_0_ingenieria.jpg";
+  frameFondo = "2_0_ingenieria.svg";
 
   textoIngenieria = `El área de Ingeniería Civil está formada por profesionales Ingenieros de Caminos e Ingenieros Técnicos de Obras Públicas, con más de 14 años de experiencia proyectando, gestionando, dirigiendo y construyendo todo tipo de obras civiles.
       <br/><br/>

@@ -19,12 +19,12 @@ export default class BackgroundLoader extends Vue {
   }
 
   get bgImage() {
-    if (!this.source) return require("@/assets/background_1200.jpg");
     return require("@/assets/" + this.bgName);
   }
 
   get mainStyle() {
     // console.log("mainStyle - " + this.bgImage);
+    if (!this.source) return "{}"
     return {
       backgroundImage: `url(${this.bgImage})`,
     };
@@ -48,7 +48,7 @@ export default class BackgroundLoader extends Vue {
   width: $img-width;
   height: $img-height;
 
-  background-color: transparent;
+  // background-color: white;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

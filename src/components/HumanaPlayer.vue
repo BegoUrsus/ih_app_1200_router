@@ -22,7 +22,7 @@ import PhotoPlayer from "@/components/Common/PhotoPlayer.vue";
 })
 export default class HumanaPlayer extends Vue {
 
-  public frame_humana = "5_0_humana.jpg";
+  public frame_humana = "5_0_humana.svg";
 
   public backgroundRef = this.frame_humana;
 
@@ -107,8 +107,8 @@ zeroPad = (num: number, places: number) => String(num).padStart(places, "0");
 
 .show-foto-button {
     position:absolute; 
-    left: 360px;
-    top: 351px;
+    left: 394px;
+    top: 348px;
     width: 72px;
     height: 36px;
     // background-color: rgba(255, 0, 0 ,0.2);

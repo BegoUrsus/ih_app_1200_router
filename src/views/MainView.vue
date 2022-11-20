@@ -29,7 +29,7 @@ export default class MainView extends Vue {
   .logo-menu {
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -2px;
     pointer-events: none;
   }
 </style>

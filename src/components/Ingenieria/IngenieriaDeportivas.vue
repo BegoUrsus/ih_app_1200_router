@@ -15,7 +15,8 @@ export default class IngenieriaDeportivas extends Vue {
   
   frame = "LINEA_2_5_ingenieria_depor.png";
   
-  texto = `<span class="texto-rojo">[ver fotos]</span>`;
+  // texto = `<span class="texto-rojo">[ver fotos]</span>`;
+  texto = "";
 }
 </script>
 

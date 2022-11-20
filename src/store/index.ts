@@ -3,7 +3,8 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export const TEXT_COLOR_NORMAL = '#bcbcb9';
+// export const TEXT_COLOR_NORMAL = '#bcbcb9';
+export const TEXT_COLOR_NORMAL = '#9c9c99';
 export const TEXT_COLOR_RED = '#e60d2e';
 export const TEXT_COLOR_GREY = '#8f8fbc';
 

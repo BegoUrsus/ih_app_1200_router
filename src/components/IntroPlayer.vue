@@ -1,8 +1,8 @@
 <template lang="pug">
-  section(id="intro-player")
-    SequencePlayer(v-if="firstSeq" @finished="onFirstSeqFinished" :frames="framesIn" :default="defaultIn")
+  section(id="intro-player" @click="onRomboClicked")
+    SequencePlayer(id="first-seq" v-if="firstSeq" @finished="onFirstSeqFinished" :frames="framesIn" :default="defaultIn" :slow="true")
     IntroButton(v-if="buttonEnabled" @rombo-clicked="onRomboClicked")
-    SequencePlayer(v-if="secondSeq" @finished="onSecondSeqFinished" :frames="framesOut" :default="defaultOut")
+    SequencePlayer(id="second-seq" v-if="secondSeq" @finished="onSecondSeqFinished" :frames="framesOut" :default="defaultOut" :whiteBg="true")
 
       
 </template>
@@ -44,13 +44,13 @@ export default class IntroPlayer extends Vue {
 
   get defaultIn(): HTMLImageElement {
     const img = new Image();
-    img.src = require("@/assets/backgrounds/0_intro.jpg");
+    img.src = require("@/assets/backgrounds/0_intro.svg");
     return img;
   }
 
   get defaultOut(): HTMLImageElement {
     const img = new Image();
-    img.src = require("@/assets/sequences/0_intro/out/ih0125.jpg");
+    img.src = require("@/assets/sequences/0_intro/out/ih0125.svg");
     return img;
   }
 
@@ -77,7 +77,7 @@ export default class IntroPlayer extends Vue {
   }
 
   onRomboClicked() {
-    this.secondSeq = true
+    this.secondSeq = true;
     this.buttonEnabled = false;
   }
 
@@ -92,7 +92,10 @@ export default class IntroPlayer extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-#intro-player {
+#intro-player,
+#first-seq,
+#second-seq,
+.full {
   position: absolute; width:100%; height:100%; top:0; left:0;
 }
 

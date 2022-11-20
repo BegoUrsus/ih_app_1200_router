@@ -22,7 +22,7 @@ import PhotoPlayer from "@/components/Common/PhotoPlayer.vue";
 })
 export default class ProjectPlayer extends Vue {
 
-  public frame_project = "4_0_project.jpg";
+  public frame_project = "4_0_project.svg";
 
   public backgroundRef = this.frame_project;
 

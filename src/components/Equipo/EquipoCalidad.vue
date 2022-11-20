@@ -16,7 +16,7 @@ import BackgroundLoader from "@/components/Common/BackgroundLoader.vue";
 })
 export default class EquipoCalidad extends Vue {
 
-  public frame_calidad = "1_2_1_equipo_gest_calidad.jpg";
+  public frame_calidad = "1_2_1_equipo_gest_calidad.svg";
   public texto =
     `INGENIERÍA HUMANA certificada la calidad de sus trabajos mediante la aplicación de un Plan de Calidad para cada una de las fases de la obra:
     <br/><br/>

@@ -1,10 +1,6 @@
 <template lang="pug">
 #app
-  //- img(:src="getSource"
-  //-     alt="" width="100%"
-  //-   )
-  //- div {{ documentWidth }}
-  #app-main(v-cloak)
+  #app-main.unselectable(v-cloak)
     #outer
       transition(name="fade")
         router-view
@@ -24,19 +20,6 @@ export const IMG_HEIGHT = 780;
 })
 
 export default class App extends Vue {  
-  // get getSource() {
-  //   let width = this. documentWidth;
-  //   if (width <= 200)
-  //     return "ih0217_w_200.jpg";
-  //   if (width <= 563)
-  //     return "ih0217_w_563.jpg"
-  //   if (width <= 842)
-  //     return "ih0217_w_842.jpg"
-  //   return "ih0217_w_1200.jpg"
-  // }
-  // get documentWidth() {
-  //   return document.documentElement.clientWidth;
-  // }
   created() {
     window.addEventListener("resize", this.sizeAll);
     window.addEventListener("orientationchange", this.sizeAll);
@@ -65,8 +48,10 @@ export default class App extends Vue {
     // console.log("IMG_WIDTH/HEIGHT: ", IMG_WIDTH, IMG_HEIGHT);
     // console.log("ratioImage/Client: ", ratioImage, ratioClient);
 
-    let s_w = (w - 50) / IMG_WIDTH;
-    let s_h = (h - 50) / IMG_HEIGHT;
+    // let s_w = (w - 50) / IMG_WIDTH;
+    // let s_h = (h - 50) / IMG_HEIGHT;
+    let s_w = (w) / IMG_WIDTH;
+    let s_h = (h) / IMG_HEIGHT;
 
     let s = ratioClient > ratioImage ? s_h : s_w;
     // console.log("A scale: ", s_w, s_h, s);
@@ -99,6 +84,15 @@ body {
   border: 0;
 }
 
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -106,7 +100,7 @@ body {
   
   // background:$text-color-grey;
   // background: #121212;
-  // background: white;
+  background: white;
 
   /* image */
   // background-image: url('assets/background_1200.jpg');
@@ -147,9 +141,9 @@ body {
   // background-blend-mode: multiply,multiply;
 
   //premium-dark
-  background: #000000;  /* fallback for old browsers */
-  background: linear-gradient(to right, #434343 0%, black 100%);
-  background: -webkit-linear-gradient(to right, #434343 0%, black 100%);
+  // background: #000000;  /* fallback for old browsers */
+  // background: linear-gradient(to right, #434343 0%, black 100%);
+  // background: -webkit-linear-gradient(to right, #434343 0%, black 100%);
 
 
   // netflix
@@ -192,7 +186,7 @@ body {
     // background-color: rgba(255, 0, 0, 0.5);
 
     .texto-bold {
-        font-weight: 500;
+        font-weight: 700;
         color: $text-color-grey;
     }
 

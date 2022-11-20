@@ -1,6 +1,7 @@
 <template lang="pug">
     section(id="equipo-gestion")
-      router-view
+      Transition(name="fade" mode="out-in")
+        router-view
       Transition(name="slide-fade-menu" appear)
         MenuGestion
 </template>

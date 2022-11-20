@@ -1,6 +1,6 @@
 <template lang="pug">
   .logo-home(style="position:absolute; left:0; bottom:0")
-    img.rombo(id="rombo" src="@/assets/shapes/rombo_home.png" @mouseover.self="showHome=true" @mouseleave="showHome=false" @click="goHome")
+    img.rombo(id="rombo" src="@/assets/shapes/rombo_180.svg" @mouseover.self="showHome=true" @mouseleave="showHome=false" @click="goHome")
     .home(id="home" :style="{display: homeDisplay }") INICIO
 
 </template>
@@ -39,8 +39,9 @@ export default class LogoHome extends Vue {
   position: absolute;
   display: block;
   width: 160px;
-  left: 28px;
-  bottom: 28px;
+  width: 220px;
+  left: 24px;
+  bottom: 24px;
   cursor: pointer;
   // background-color: blue;
   
@@ -48,9 +49,11 @@ export default class LogoHome extends Vue {
 
 .home {
   position: absolute;
-  left: 16px;
-  bottom: 16px;
-  font-size: 12px;
+  left: 24px;
+  bottom: 18px;
+  font-size: 14px;
+  font-weight: 500;
   color: $text-color-grey;
+  pointer-events: none;
 }
 </style>

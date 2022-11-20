@@ -20,7 +20,7 @@ import MenuPrincipal from "@/components/Menus/MenuPrincipal.vue";
 })
 export default class ContactoPlayer extends Vue {
 
-  public frame_contacto = "6_0_contacto.jpg";
+  public frame_contacto = "6_0_contacto.svg";
   public backgroundRef = this.frame_contacto;
 
   // mounted() {

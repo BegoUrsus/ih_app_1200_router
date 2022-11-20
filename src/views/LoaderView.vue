@@ -92,13 +92,13 @@ export default class LoaderView extends Vue {
       });
     }
 
-    const img_0_intro_in = require.context('@/assets/sequences/0_intro/in', false, /\.jpg$/).keys()
+    const img_0_intro_in = require.context('@/assets/sequences/0_intro/in', false, /\.svg$/).keys()
       .map(key => { return require("@/assets/sequences/0_intro/in" + key.substring(1)); }
     );
     this.totImages += img_0_intro_in.length;
     loadImages(img_0_intro_in, frames_0_intro_in, '0_intro_in');
     
-    const img_0_intro_out = require.context('@/assets/sequences/0_intro/out', false, /\.jpg$/).keys()
+    const img_0_intro_out = require.context('@/assets/sequences/0_intro/out', false, /\.svg$/).keys()
       .map(key => { return require("@/assets/sequences/0_intro/out" + key.substring(1)); }
     );
     this.totImages += img_0_intro_out.length;

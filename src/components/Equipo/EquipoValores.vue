@@ -16,7 +16,7 @@ import BackgroundLoader from "@/components/Common/BackgroundLoader.vue";
 })
 export default class EquipoValores extends Vue {
 
-  public frame_valores = "1_1_equipo_valores.jpg";
+  public frame_valores = "1_1_equipo_valores.svg";
   public texto =
     `INGENIERÍA HUMANA nace de la colaboración entre Ingenieros de Caminos, Ingenieros de Obras Públicas, Arquitectos, Arquitectos Técnicos, Ingenieros Industriales e Ingenieros Técnicos Agrícolas que acumulan años de experiencia en las distintas tipologías de Obras Civiles, Edificación e Instalaciones Industriales.
     <br/><br/>

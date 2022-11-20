@@ -22,7 +22,7 @@ import PhotoPlayer from "@/components/Common/PhotoPlayer.vue";
 })
 export default class EdificacionPlayer extends Vue {
 
-  public frame_edificacion = "3_0_edificacion.jpg";
+  public frame_edificacion = "3_0_edificacion.svg";
 
   public backgroundRef = this.frame_edificacion;
 
